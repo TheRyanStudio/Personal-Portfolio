@@ -1,0 +1,277 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Johnson's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/13ff5a0d15.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- -------- navigation -------- -->
+
+    <!---- mobile navigation ---->
+    <div class="mobile-nav">
+      <span class="mobile-name">Ryan Johnson</span>
+      <i class="fa-solid fa-bars" id="menu-toggle"></i>
+
+      <div class="items" id="mobile-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio-vertical">Portfolio</a></li>
+          <li><a href="mailto:ryandjohnson08@gmail.com">Reach Out!</a></li>
+          <li><a href="/resume/resume2026.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <!---- desktop navigation ---->
+    <nav class="nav">
+      <div class="items-left">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio-horizontal">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="items-right">
+        <ul>
+          <li><a href="mailto:ryandjohnson08@gmail.com">Reach Out!</a></li>
+          <li><a href="/resume/resume2026.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 id="title-name">Ryan Johnson</h1>
+    <div class="fullscreen"></div>
+    <div class="scroll-trigger"></div>
+
+    <!-- -------- main -------- -->
+    <main>
+      <!-- ----- about ------- -->
+      <section id="about">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="images/headshot.jpg" />
+          </div>
+          <div class="about-content">
+            <h2 class="heading">Full-Stack Developer</h2>
+            <h1 class="background-text">About Me</h1>
+
+            <p class="about-preview">
+              I have a strong interest in balancing secure software with a
+              positive user experience.
+            </p>
+
+            <p class="about-full">
+              I’m a full-stack developer with a bachelor’s degree in Computer
+              Science from Carleton University. I focused my studies on software
+              security and secure design principles. I’ve always loved figuring
+              out how things work behind the scenes, and I enjoy building
+              software that’s both practical and easy to use.
+            </p>
+
+            <button id="about-toggle">Read more</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- skills ------- -->
+      <section id="skills">
+        <div class="skills-container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div>Java</div>
+            <div>JavaScript</div>
+            <div>HTML & CSS</div>
+            <div>Python</div>
+            <div>C++</div>
+            <div>C</div>
+            <div>PostgreSQL</div>
+            <div>Wireshark</div>
+            <div>TortoiseSVN</div>
+            <div>Postman</div>
+            <div>JUnit</div>
+            <div>Cypress</div>
+            <div>Cucumber</div>
+            <div>Maven</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- portfolio ------- -->
+      <!---- mobile view ---->
+      <section id="portfolio-vertical">
+        <div class="project">
+          <h2 id="project-title">Projects</h2>
+          <img
+            src="images/password-manager.png"
+            alt="Password Manager Homepage"
+            class="project-img"
+          />
+
+          <h2 class="heading">Encrypted Password Manager</h2>
+          <h3 class="project-subtitle">Python | SQLite | PySide6 | Qt</h3>
+
+          <p>
+            Developed a secure password manager with encrypted SQLite storage
+            and master password protection using Argon2 and PBKDF2-HMAC.
+          </p>
+
+          <a
+            href="https://github.com/TheRyanStudio/password-manager-application"
+            target="_blank"
+            class="project-link"
+          >
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <img
+            src="images/library-management-system.png"
+            alt="Library Management System"
+            class="project-img"
+          />
+
+          <h2 class="heading">Library Management System</h2>
+          <h3 class="project-subtitle">
+            Java | Cucumber | Cypress | Javascript | Node | Express
+          </h3>
+
+          <p>
+            Developed using TDD, BDD, and end-to-end web testing. Supports
+            authentication, borrowing, returning, and hold queues.
+          </p>
+
+          <a
+            href="https://github.com/TheRyanStudio/Library-Management-System"
+            target="_blank"
+            class="project-link"
+          >
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <img
+            src="images/health-monitor.png"
+            alt="Health Monitor Menu"
+            class="project-img"
+          />
+
+          <h2 class="heading">Health Monitor Device Simulator</h2>
+          <h3 class="project-subtitle">C++ | Qt</h3>
+
+          <p>
+            Simulated a RaDoTech device measuring body points and generating
+            functional health results with multiple user profiles.
+          </p>
+
+          <a
+            href="https://github.com/TheRyanStudio/RaDoTech_App"
+            target="_blank"
+            class="project-link"
+          >
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
+      </section>
+      <!---- desktop view ---->
+      <section id="portfolio-horizontal">
+        <div class="project">
+          <div class="row">
+            <div class="project-col-desc">
+              <h2 class="heading">Encrypted Password Manager</h2>
+              <h3 class="project-subtitle">Python | SQLite | PySide6 | Qt</h3>
+              Developed a secure password manager with encrypted SQLite storage
+              and master password protection using Argon2 and PBKDF2-HMAC.
+              <a
+                href="https://github.com/TheRyanStudio/password-manager-application"
+                target="_blank"
+              >
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+            <div class="project-col-img1">
+              <img
+                src="images/password-manager.png"
+                alt="Password Manager Homepage"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="row">
+            <div class="project-col-desc">
+              <h2 class="heading">Library Management System</h2>
+              <h3 class="project-subtitle">
+                Java | Cucumber | Cypress | Javascript | Node | Express
+              </h3>
+              Developed in three stages: Test-Driven Development for backend
+              logic, Behavior-Driven Development for feature scenarios, and Web
+              Acceptance Testing for end-to-end validation and UI. The system
+              supports authentication, user book borrowing, returning, and
+              handling of a hold queue.
+              <a
+                href="https://github.com/TheRyanStudio/Library-Management-System"
+                target="_blank"
+              >
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+            <div class="project-col-img2">
+              <img
+                src="images/library-management-system.png"
+                alt="Library Management System"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="row">
+            <div class="project-col-desc">
+              <h2 class="heading">Health Monitor Device Simulator</h2>
+              <h3 class="project-subtitle">C++ | Qt</h3>
+              Developed an application that simulates a RaDoTech device that
+              measures points around the body and generates functional health of
+              vital organs and overall body health. Application handles multiple
+              profiles, device simulation, and detailed results.
+              <a
+                href="https://github.com/TheRyanStudio/RaDoTech_App"
+                target="_blank"
+              >
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+            <div class="project-col-img3">
+              <img src="images/health-monitor.png" alt="Health Monitor Menu" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <p>
+            <a href="mailto:ryandjohnson08@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            |
+            <a href="https://github.com/TheRyanStudio" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            |
+            <a
+              href="https://www.linkedin.com/in/ryan-johnson-cs/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
